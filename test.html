@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://googleplacesdimasv1.p.rapidapi.com/addPlace",
+                "method": "POST",
+                "headers": {
+                    "x-rapidapi-host": "GooglePlacesdimasV1.p.rapidapi.com",
+                    "x-rapidapi-key": "974f3cf7e8msh169ac2c70a78da8p1feb5djsn40f8389d6872",
+                    "content-type": "application/x-www-form-urlencoded"
+                },
+                "data": {}
+            }
+            
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+            });
+    </div>
+</body>
+</html>
